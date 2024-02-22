@@ -1,0 +1,17 @@
+D:\Exam_System\ahmedsamy4000\Exam_System\Exam_system_App_Solution\Exam_system_App\bin\Debug\net8.0-windows\Exam_system_App.exe
+D:\Exam_System\ahmedsamy4000\Exam_System\Exam_system_App_Solution\Exam_system_App\bin\Debug\net8.0-windows\Exam_system_App.deps.json
+D:\Exam_System\ahmedsamy4000\Exam_System\Exam_system_App_Solution\Exam_system_App\bin\Debug\net8.0-windows\Exam_system_App.runtimeconfig.json
+D:\Exam_System\ahmedsamy4000\Exam_System\Exam_system_App_Solution\Exam_system_App\bin\Debug\net8.0-windows\Exam_system_App.dll
+D:\Exam_System\ahmedsamy4000\Exam_System\Exam_system_App_Solution\Exam_system_App\bin\Debug\net8.0-windows\Exam_system_App.pdb
+D:\Exam_System\ahmedsamy4000\Exam_System\Exam_system_App_Solution\Exam_system_App\obj\Debug\net8.0-windows\Exam_system_App.Form1.resources
+D:\Exam_System\ahmedsamy4000\Exam_System\Exam_system_App_Solution\Exam_system_App\obj\Debug\net8.0-windows\Exam_system_App.csproj.GenerateResource.cache
+D:\Exam_System\ahmedsamy4000\Exam_System\Exam_system_App_Solution\Exam_system_App\obj\Debug\net8.0-windows\Exam_system_App.GeneratedMSBuildEditorConfig.editorconfig
+D:\Exam_System\ahmedsamy4000\Exam_System\Exam_system_App_Solution\Exam_system_App\obj\Debug\net8.0-windows\Exam_system_App.AssemblyInfoInputs.cache
+D:\Exam_System\ahmedsamy4000\Exam_System\Exam_system_App_Solution\Exam_system_App\obj\Debug\net8.0-windows\Exam_system_App.AssemblyInfo.cs
+D:\Exam_System\ahmedsamy4000\Exam_System\Exam_system_App_Solution\Exam_system_App\obj\Debug\net8.0-windows\Exam_system_App.csproj.CoreCompileInputs.cache
+D:\Exam_System\ahmedsamy4000\Exam_System\Exam_system_App_Solution\Exam_system_App\obj\Debug\net8.0-windows\Exam_system_App.sourcelink.json
+D:\Exam_System\ahmedsamy4000\Exam_System\Exam_system_App_Solution\Exam_system_App\obj\Debug\net8.0-windows\Exam_system_App.dll
+D:\Exam_System\ahmedsamy4000\Exam_System\Exam_system_App_Solution\Exam_system_App\obj\Debug\net8.0-windows\refint\Exam_system_App.dll
+D:\Exam_System\ahmedsamy4000\Exam_System\Exam_system_App_Solution\Exam_system_App\obj\Debug\net8.0-windows\Exam_system_App.pdb
+D:\Exam_System\ahmedsamy4000\Exam_System\Exam_system_App_Solution\Exam_system_App\obj\Debug\net8.0-windows\Exam_system_App.genruntimeconfig.cache
+D:\Exam_System\ahmedsamy4000\Exam_System\Exam_system_App_Solution\Exam_system_App\obj\Debug\net8.0-windows\ref\Exam_system_App.dll
