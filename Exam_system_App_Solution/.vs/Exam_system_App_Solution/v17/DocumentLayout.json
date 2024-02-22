@@ -1,0 +1,95 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Exam_System\\ahmedsamy4000\\Exam_System\\Exam_system_App_Solution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{785B8140-96ED-44B3-9A6D-DB3E2E78BB01}|Exam_system_App\\Exam_system_App.csproj|d:\\exam_system\\ahmedsamy4000\\exam_system\\exam_system_app_solution\\exam_system_app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{785B8140-96ED-44B3-9A6D-DB3E2E78BB01}|Exam_system_App\\Exam_system_App.csproj|solutionrelative:exam_system_app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{785B8140-96ED-44B3-9A6D-DB3E2E78BB01}|Exam_system_App\\Exam_system_App.csproj|D:\\Exam_System\\ahmedsamy4000\\Exam_System\\Exam_system_App_Solution\\exam_system_app\\studentmainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{785B8140-96ED-44B3-9A6D-DB3E2E78BB01}|Exam_system_App\\Exam_system_App.csproj|solutionrelative:exam_system_app\\studentmainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{785B8140-96ED-44B3-9A6D-DB3E2E78BB01}|Exam_system_App\\Exam_system_App.csproj|D:\\Exam_System\\ahmedsamy4000\\Exam_System\\Exam_system_App_Solution\\exam_system_app\\studentmainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{785B8140-96ED-44B3-9A6D-DB3E2E78BB01}|Exam_system_App\\Exam_system_App.csproj|solutionrelative:exam_system_app\\studentmainpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{785B8140-96ED-44B3-9A6D-DB3E2E78BB01}|Exam_system_App\\Exam_system_App.csproj|D:\\Exam_System\\ahmedsamy4000\\Exam_System\\Exam_system_App_Solution\\exam_system_app\\newexamform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{785B8140-96ED-44B3-9A6D-DB3E2E78BB01}|Exam_system_App\\Exam_system_App.csproj|solutionrelative:exam_system_app\\newexamform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentMainPage.cs",
+              "DocumentMoniker": "D:\\Exam_System\\ahmedsamy4000\\Exam_System\\Exam_system_App_Solution\\Exam_system_App\\StudentMainPage.cs",
+              "RelativeDocumentMoniker": "Exam_system_App\\StudentMainPage.cs",
+              "ToolTip": "D:\\Exam_System\\ahmedsamy4000\\Exam_System\\Exam_system_App_Solution\\Exam_system_App\\StudentMainPage.cs",
+              "RelativeToolTip": "Exam_system_App\\StudentMainPage.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAMwCIAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T19:53:10.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentMainPage.cs [Design]",
+              "DocumentMoniker": "D:\\Exam_System\\ahmedsamy4000\\Exam_System\\Exam_system_App_Solution\\Exam_system_App\\StudentMainPage.cs",
+              "RelativeDocumentMoniker": "Exam_system_App\\StudentMainPage.cs",
+              "ToolTip": "D:\\Exam_System\\ahmedsamy4000\\Exam_System\\Exam_system_App_Solution\\Exam_system_App\\StudentMainPage.cs [Design]",
+              "RelativeToolTip": "Exam_system_App\\StudentMainPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T19:53:30.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NewExamForm.cs [Design]",
+              "DocumentMoniker": "D:\\Exam_System\\ahmedsamy4000\\Exam_System\\Exam_system_App_Solution\\Exam_system_App\\NewExamForm.cs",
+              "RelativeDocumentMoniker": "Exam_system_App\\NewExamForm.cs",
+              "ToolTip": "D:\\Exam_System\\ahmedsamy4000\\Exam_System\\Exam_system_App_Solution\\Exam_system_App\\NewExamForm.cs [Design]",
+              "RelativeToolTip": "Exam_system_App\\NewExamForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T19:53:22.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Exam_System\\ahmedsamy4000\\Exam_System\\Exam_system_App_Solution\\Exam_system_App\\Program.cs",
+              "RelativeDocumentMoniker": "Exam_system_App\\Program.cs",
+              "ToolTip": "D:\\Exam_System\\ahmedsamy4000\\Exam_System\\Exam_system_App_Solution\\Exam_system_App\\Program.cs",
+              "RelativeToolTip": "Exam_system_App\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T19:53:02.871Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
