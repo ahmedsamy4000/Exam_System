@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Exam_system_App.Context;
+using Exam_system_App.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,13 +16,14 @@ namespace Exam_system_App
     public partial class SignInForm : Form
     {
         StudentMainPage studPage;
+        DBContext context;
         public SignInForm()
         {
             InitializeComponent();
-
+            context = new DBContext();
         }
 
-        private void SignInbtn_Click(object sender, EventArgs e)
+        private async void SignInbtn_Click(object sender, EventArgs e)
         {
             int id;
             string password = passwordtxtbox.Text;
@@ -37,8 +40,34 @@ namespace Exam_system_App
             if (int.TryParse(idtxtbox.Text, out id) && password != String.Empty && identity != String.Empty)
             {
 
+                //check password and id in table[identity]
+                //isSignedIn
+                if(identity == "Student")
+                {
+                    var res = await context.Procedures.studentLoginAsync(id, password);
+                    if (res.Count == 0)
+                        isSignedIn = false;
+                    else
+                    {
+                        isSignedIn = true;
+                        Constants.Username = res[0].ST_Fname + " " + res[0].ST_Lname;
+                        Constants.UserID = id;
+                    }
+                }
 
+                else if (identity == "Instructor")
+                {
+                    var res = await context.Procedures.instructorLoginAsync(id, password);
+                    if (res.Count == 0)
+                        isSignedIn = false;
+                    else
+                    {
+                        isSignedIn = true;
+                        Constants.Username = res[0].Ins_Name;
+                        Constants.UserID = id;
 
+                    }
+                }
             }
 
             else
@@ -46,26 +75,25 @@ namespace Exam_system_App
                 MessageBox.Show("incorrect Fields");
             }
 
-            if (!isSignedIn)
+            if (isSignedIn)
             {
-                this.Hide();
                 if (identity == "Instructor")
                 {
                     //open ins form
+                    Debug.WriteLine("samiiiiiiiiiiii");
                 }
                 else
                 {
                     this.Hide();
                     studPage = new StudentMainPage();
-                    Constants.studentID = id;
+                    
                     studPage.Show();
                     //open stud form
                 }
-
             }
             else
             {
-
+                MessageBox.Show("invalid Login data");
             }
 
 

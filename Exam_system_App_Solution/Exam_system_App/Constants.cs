@@ -8,7 +8,13 @@ namespace Exam_system_App
 {
     public static class Constants
     {
-        public static int studentID { get; set; }
+        public static int UserID { get; set; }
+        
+        public static string Username { get; set; }
 
-    } }
+        public static int CrsID { get; set; }
+
+    } 
+}
+
 

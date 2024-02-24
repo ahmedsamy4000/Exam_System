@@ -1,0 +1,350 @@
+﻿{
+   "CodeGenerationMode": 4,
+   "ContextClassName": "DBContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": true,
+   "ModelNamespace": "",
+   "OutputContextPath": "Context",
+   "OutputPath": "Entities",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "Exam_system_App",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[Course]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Department]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Exam]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Exam_Questions]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Instructor]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Question]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Question_Choices]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Student]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Student_Course]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Student_Exam_Question]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Topic]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Course_Delete]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Course_Insert]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Course_Select]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Course_Update]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[CourseTopics_Report]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Department_Delete]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Department_Insert]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Department_Select]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Department_SelectById]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Department_SelectByManagerId]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Department_SelectByName]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Department_Students _Report]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Department_Update]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Department_UpdateManagerById]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Department_UpdateNameById]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Exam_Answer]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Exam_Answers]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Exam_Correction]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Exam_Delete]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Exam_Insert]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Exam_Questions_Delete]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Exam_Questions_Insert]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Exam_Questions_Report]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Exam_Questions_Update]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Exam_Select]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Exam_Update]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GenerateExam]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Instructor_Courses_Report]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Instructor_Delete]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Instructor_Insert]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Instructor_Select]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Instructor_SelectByDeptId]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Instructor_SelectById]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Instructor_SelectByName]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Instructor_Update]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Instructor_UpdateDeptId]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Instructor_UpdateName]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[instructorLogin]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Question_Choices_Delete]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Question_Choices_Insert]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Question_Choices_select]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Question_Choices_Update]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Question_Delete]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Question_Insert]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Question_Student_Answer_Report]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Question_Update]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Questions_Select]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Student_Course_Delete]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Student_Course_Insert]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Student_Course_Select]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Student_Course_Update]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Student_Delete]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Student_Grade_Report]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Student_Insert]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Student_Select]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Student_Update]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[StudentChooseCourse]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[StudentExamQuestion_Delete]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[StudentExamQuestion_Insert]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[StudentExamQuestion_Select]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[StudentExamQuestion_Update]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[studentLogin]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Topic_Delete]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Topic_Insert]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Topic_Select]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Topic_Update]",
+         "ObjectType": 1
+      }
+   ],
+   "UiHint": "pc\\sqlexpress.online_Examination.dbo",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": true,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UsePrefixNavigationNaming": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false
+}
