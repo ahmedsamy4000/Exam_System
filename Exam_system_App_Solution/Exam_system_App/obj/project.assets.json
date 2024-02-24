@@ -4217,19 +4217,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mokht\\.nuget\\packages\\": {}
+    "C:\\Users\\ahmed\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\ITI\\Exam_system\\Exam_System\\Exam_system_App_Solution\\Exam_system_App\\Exam_system_App.csproj",
+      "projectUniqueName": "D:\\Exam_System\\ahmedsamy4000\\Exam_System\\Exam_system_App_Solution\\Exam_system_App\\Exam_system_App.csproj",
       "projectName": "Exam_system_App",
-      "projectPath": "F:\\ITI\\Exam_system\\Exam_System\\Exam_system_App_Solution\\Exam_system_App\\Exam_system_App.csproj",
-      "packagesPath": "C:\\Users\\mokht\\.nuget\\packages\\",
-      "outputPath": "F:\\ITI\\Exam_system\\Exam_System\\Exam_system_App_Solution\\Exam_system_App\\obj\\",
+      "projectPath": "D:\\Exam_System\\ahmedsamy4000\\Exam_System\\Exam_system_App_Solution\\Exam_system_App\\Exam_system_App.csproj",
+      "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
+      "outputPath": "D:\\Exam_System\\ahmedsamy4000\\Exam_System\\Exam_system_App_Solution\\Exam_system_App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mokht\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4249,6 +4249,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {

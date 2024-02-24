@@ -16,6 +16,7 @@ namespace Exam_system_App
     public partial class SignInForm : Form
     {
         StudentMainPage studPage;
+        InstructorMainPage insPage;
         DBContext context;
         public SignInForm()
         {
@@ -79,8 +80,9 @@ namespace Exam_system_App
             {
                 if (identity == "Instructor")
                 {
-                    //open ins form
-                    Debug.WriteLine("samiiiiiiiiiiii");
+                    this.Hide();
+                    insPage = new InstructorMainPage();
+                    insPage.Show();
                 }
                 else
                 {

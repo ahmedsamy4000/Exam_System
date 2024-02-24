@@ -28,98 +28,115 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            label1 = new Label();
+            nxtBtn = new Button();
+            prevBtn = new Button();
+            questionLbl = new Label();
             Achoice = new RadioButton();
             Bchoice = new RadioButton();
             Cchoice = new RadioButton();
             Dchoice = new RadioButton();
+            submitbtn = new Button();
             SuspendLayout();
             // 
-            // button1
+            // nxtBtn
             // 
-            button1.Location = new Point(573, 353);
-            button1.Name = "button1";
-            button1.Size = new Size(273, 29);
-            button1.TabIndex = 0;
-            button1.Text = "Next";
-            button1.UseVisualStyleBackColor = true;
+            nxtBtn.Location = new Point(409, 353);
+            nxtBtn.Name = "nxtBtn";
+            nxtBtn.Size = new Size(273, 29);
+            nxtBtn.TabIndex = 0;
+            nxtBtn.Text = "Next";
+            nxtBtn.UseVisualStyleBackColor = true;
+            nxtBtn.Click += nxtBtn_Click;
             // 
-            // button2
+            // prevBtn
             // 
-            button2.Location = new Point(163, 353);
-            button2.Name = "button2";
-            button2.Size = new Size(273, 29);
-            button2.TabIndex = 1;
-            button2.Text = "Previous";
-            button2.UseVisualStyleBackColor = true;
+            prevBtn.Location = new Point(48, 353);
+            prevBtn.Name = "prevBtn";
+            prevBtn.Size = new Size(273, 29);
+            prevBtn.TabIndex = 1;
+            prevBtn.Text = "Previous";
+            prevBtn.UseVisualStyleBackColor = true;
+            prevBtn.Click += prevBtn_Click;
             // 
-            // label1
+            // questionLbl
             // 
-            label1.BorderStyle = BorderStyle.FixedSingle;
-            label1.Location = new Point(12, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(1042, 81);
-            label1.TabIndex = 2;
-            label1.Text = "....";
+            questionLbl.BorderStyle = BorderStyle.FixedSingle;
+            questionLbl.Location = new Point(11, 9);
+            questionLbl.Name = "questionLbl";
+            questionLbl.Size = new Size(1042, 81);
+            questionLbl.TabIndex = 2;
+            questionLbl.Text = "....";
             // 
             // Achoice
             // 
             Achoice.AutoSize = true;
-            Achoice.Location = new Point(12, 113);
+            Achoice.Location = new Point(11, 113);
             Achoice.Name = "Achoice";
             Achoice.Size = new Size(117, 24);
             Achoice.TabIndex = 3;
             Achoice.TabStop = true;
             Achoice.Text = "radioButton1";
             Achoice.UseVisualStyleBackColor = true;
+            Achoice.Click += Achoice_Click;
             // 
             // Bchoice
             // 
             Bchoice.AutoSize = true;
-            Bchoice.Location = new Point(12, 162);
+            Bchoice.Location = new Point(11, 163);
             Bchoice.Name = "Bchoice";
             Bchoice.Size = new Size(117, 24);
             Bchoice.TabIndex = 4;
             Bchoice.TabStop = true;
             Bchoice.Text = "radioButton2";
             Bchoice.UseVisualStyleBackColor = true;
+            Bchoice.Click += Bchoice_Click;
             // 
             // Cchoice
             // 
             Cchoice.AutoSize = true;
-            Cchoice.Location = new Point(12, 204);
+            Cchoice.Location = new Point(11, 204);
             Cchoice.Name = "Cchoice";
             Cchoice.Size = new Size(117, 24);
             Cchoice.TabIndex = 5;
             Cchoice.TabStop = true;
             Cchoice.Text = "radioButton3";
             Cchoice.UseVisualStyleBackColor = true;
+            Cchoice.Click += Cchoice_Click;
             // 
             // Dchoice
             // 
             Dchoice.AutoSize = true;
-            Dchoice.Location = new Point(12, 251);
+            Dchoice.Location = new Point(11, 251);
             Dchoice.Name = "Dchoice";
             Dchoice.Size = new Size(117, 24);
             Dchoice.TabIndex = 6;
             Dchoice.TabStop = true;
             Dchoice.Text = "radioButton4";
             Dchoice.UseVisualStyleBackColor = true;
+            Dchoice.Click += Dchoice_Click;
+            // 
+            // submitbtn
+            // 
+            submitbtn.Location = new Point(769, 353);
+            submitbtn.Name = "submitbtn";
+            submitbtn.Size = new Size(273, 29);
+            submitbtn.TabIndex = 7;
+            submitbtn.Text = "Submit";
+            submitbtn.UseVisualStyleBackColor = true;
             // 
             // NewExamForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1066, 450);
+            ClientSize = new Size(1066, 451);
+            Controls.Add(submitbtn);
             Controls.Add(Dchoice);
             Controls.Add(Cchoice);
             Controls.Add(Bchoice);
             Controls.Add(Achoice);
-            Controls.Add(label1);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(questionLbl);
+            Controls.Add(prevBtn);
+            Controls.Add(nxtBtn);
             Name = "NewExamForm";
             Text = "NewExamForm";
             Load += NewExamForm_Load;
@@ -129,12 +146,13 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Label label1;
+        private Button nxtBtn;
+        private Button prevBtn;
+        private Label questionLbl;
         private RadioButton Achoice;
         private RadioButton Bchoice;
         private RadioButton Cchoice;
         private RadioButton Dchoice;
+        private Button submitbtn;
     }
 }
