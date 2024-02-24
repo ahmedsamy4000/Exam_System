@@ -48,6 +48,7 @@ namespace Exam_system_App.Context
             modelBuilder.Entity<Department_UpdateNameByIdResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<Exam_AnswerResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<Exam_CorrectionResult>().HasNoKey().ToView(null);
+            modelBuilder.Entity<Exam_Correction1Result>().HasNoKey().ToView(null);
             modelBuilder.Entity<Exam_DeleteResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<Exam_InsertResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<Exam_Questions_DeleteResult>().HasNoKey().ToView(null);
@@ -689,6 +690,38 @@ namespace Exam_system_App.Context
                 parameterreturnValue,
             };
             var _ = await _context.SqlQueryAsync<Exam_CorrectionResult>("EXEC @returnValue = [dbo].[Exam_Correction] @Exam_ID, @St_ID", sqlParameters, cancellationToken);
+
+            returnValue?.SetValue(parameterreturnValue.Value);
+
+            return _;
+        }
+
+        public virtual async Task<List<Exam_Correction1Result>> Exam_Correction1Async(int? Exam_ID, int? St_ID, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        {
+            var parameterreturnValue = new SqlParameter
+            {
+                ParameterName = "returnValue",
+                Direction = System.Data.ParameterDirection.Output,
+                SqlDbType = System.Data.SqlDbType.Int,
+            };
+
+            var sqlParameters = new []
+            {
+                new SqlParameter
+                {
+                    ParameterName = "Exam_ID",
+                    Value = Exam_ID ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.Int,
+                },
+                new SqlParameter
+                {
+                    ParameterName = "St_ID",
+                    Value = St_ID ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.Int,
+                },
+                parameterreturnValue,
+            };
+            var _ = await _context.SqlQueryAsync<Exam_Correction1Result>("EXEC @returnValue = [dbo].[Exam_Correction1] @Exam_ID, @St_ID", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 

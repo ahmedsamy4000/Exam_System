@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Exam_system_App.Context;
+using Exam_system_App.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,7 +18,7 @@ namespace Exam_system_App
     public partial class NewExamForm : Form
     {
 
-
+        DBContext context;
         class ExamQuestion
         {
             public string body { get; set; }
@@ -28,66 +30,45 @@ namespace Exam_system_App
         }
 
 
-        List<String> answers = new List<String>(new String[4]);
+        List<String> answers = new List<String>(new String[10]);
 
-        
+
         public NewExamForm()
         {
             InitializeComponent();
+            context = new();
 
         }
 
         private int questionIndex = 0;
-        private int questionCount = 4;
+        List<Question> ExamQuestions;
 
         List<ExamQuestion> questions = new List<ExamQuestion>();
 
-       
 
 
-        private void NewExamForm_Load(object sender, EventArgs e)
+
+        private async void NewExamForm_Load(object sender, EventArgs e)
         {
-            #region QuestionList
-            questions.Add(new()
-            {
-                body = "x",
-                choice1 = "1",
-                choice2 = "2",
-                choice3 = "3",
-                choice4 = "4"
-            });
 
-            questions.Add(new()
-            {
-                body = "y",
-                choice1 = "ahmed",
-                choice2 = "samy",
-                choice3 = "peter",
-                choice4 = "ashraf"
-            });
-
-            questions.Add(new()
-            {
-                body = "z",
-                choice1 = "osama",
-                choice2 = "ali",
-                choice3 = null,
-                choice4 = null
-            });
-
-            questions.Add(new()
-            {
-                body = "a",
-                choice1 = "1",
-                choice2 = "2",
-                choice3 = null,
-                choice4 = null
-            });
-            #endregion
-
-
-
+            var exam = await context.Procedures.Exam_SelectAsync(Constants.CrsID);
+            Constants.ExID = exam[0].Exam_ID;
             
+            var res = await context.Procedures.Exam_Questions_ReportAsync(exam[0].Exam_ID);
+
+            foreach (var item in res)
+            {
+                questions.Add(new()
+                {
+                    body = item.Body,
+                    choice1 = item.Choice1,
+                    choice2 = item.Choice2,
+                    choice3 = item.Choice3,
+                    choice4 = item.Choice4
+                });
+            }
+
+
             display(questionIndex);
 
             //SP EXAM_Question_REPORT
@@ -114,18 +95,15 @@ namespace Exam_system_App
             questionIndex++;
             display(questionIndex);
 
-
-
-
-
         }
 
 
         private void display(int i)
         {
+
             submitbtn.Hide();
 
-            if (i == questions.Count - 1)
+            if (i == 9)
             {
                 nxtBtn.Hide();
                 submitbtn.Show();
@@ -208,7 +186,7 @@ namespace Exam_system_App
 
         }
 
-        
+
 
         private void Achoice_Click(object sender, EventArgs e)
         {
@@ -233,6 +211,31 @@ namespace Exam_system_App
         {
             answers[questionIndex] = Dchoice.Text;
             Debug.WriteLine($"Value added :{Dchoice.Text}");
+        }
+
+        private async void submitbtn_Click(object sender, EventArgs e)
+        {
+            await context.Procedures.Exam_AnswerAsync(
+                Constants.ExID,
+                Constants.UserID,
+                answers[0],
+                answers[1],
+                answers[2],
+                answers[3],
+                answers[4],
+                answers[5],
+                answers[6],
+                answers[7],
+                answers[8],
+                answers[9]
+                );
+            await context.Procedures.Exam_CorrectionAsync(Constants.ExID, Constants.UserID);
+            this.Hide();
+            StudentMainPage studentMain = new();
+            studentMain.Show();
+
+            
+
         }
     }
 }

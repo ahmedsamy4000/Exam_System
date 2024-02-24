@@ -24,18 +24,17 @@ namespace Exam_system_App
             studidnewexamtxt.Text = Constants.UserID.ToString();
             studnamenewexamtxt.Text = Constants.Username.ToString();
             this.Load += StudentMainPage_Load;
-
-            //coursescombobox.DisplayMember = ""
         }
 
         private async void StudentMainPage_Load(object? sender, EventArgs e)
         {
+
             int userID = Constants.UserID;
             var courses = await context.Procedures.StudentChooseCourseAsync(userID);
             coursescombobox.DataSource = courses;
             coursescombobox.DisplayMember = "Crs_name";
             coursescombobox.ValueMember = "Crs_ID";
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,6 +45,18 @@ namespace Exam_system_App
             examform.Show();
         }
 
-      
+        private async void TabChanged(object sender, EventArgs e)
+        {
+            TabPage selectedTab = newww.SelectedTab;
+
+            if (selectedTab == tabPage2)
+            {
+                var res = await context.Procedures.Student_Grade_ReportAsync(Constants.UserID);
+                GrdGridView.DataSource = res.ToList();
+                GrdGridView.Columns["St_ID"].ReadOnly = true;
+                GrdGridView.Columns["Crs_name"].ReadOnly = true;
+                GrdGridView.Columns["Final_Grade"].ReadOnly = true;
+            }
+        }
     }
 }

@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Exam_system_App.Entities
 {
-    public partial class Exam_CorrectionResult
+    public partial class Exam_Correction1Result
     {
         public string Result { get; set; }
     }

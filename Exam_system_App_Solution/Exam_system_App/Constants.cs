@@ -14,6 +14,8 @@ namespace Exam_system_App
 
         public static int CrsID { get; set; }
 
+        public static int ExID { get; set; }
+
     } 
 }
 

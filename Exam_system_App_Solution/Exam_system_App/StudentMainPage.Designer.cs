@@ -38,8 +38,11 @@
             coursescombobox = new ComboBox();
             label1 = new Label();
             tabPage2 = new TabPage();
+            GrdGridView = new DataGridView();
             newww.SuspendLayout();
             tabPage1.SuspendLayout();
+            tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)GrdGridView).BeginInit();
             SuspendLayout();
             // 
             // newww
@@ -52,6 +55,7 @@
             newww.SelectedIndex = 0;
             newww.Size = new Size(699, 331);
             newww.TabIndex = 0;
+            newww.SelectedIndexChanged += TabChanged;
             // 
             // tabPage1
             // 
@@ -153,6 +157,7 @@
             // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(GrdGridView);
             tabPage2.Location = new Point(4, 24);
             tabPage2.Margin = new Padding(3, 2, 3, 2);
             tabPage2.Name = "tabPage2";
@@ -161,6 +166,15 @@
             tabPage2.TabIndex = 1;
             tabPage2.Text = "View Grades";
             tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // GrdGridView
+            // 
+            GrdGridView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            GrdGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            GrdGridView.Location = new Point(3, 2);
+            GrdGridView.Name = "GrdGridView";
+            GrdGridView.Size = new Size(685, 299);
+            GrdGridView.TabIndex = 0;
             // 
             // StudentMainPage
             // 
@@ -175,6 +189,8 @@
             newww.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
+            tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)GrdGridView).EndInit();
             ResumeLayout(false);
         }
 
@@ -190,5 +206,6 @@
         private Label label2;
         private Label studnamenewexamtxt;
         private Button button1;
+        private DataGridView GrdGridView;
     }
 }

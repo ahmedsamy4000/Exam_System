@@ -30,6 +30,7 @@
         {
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            label5 = new Label();
             generateBtn = new Button();
             label3 = new Label();
             crsCbox = new ComboBox();
@@ -42,7 +43,6 @@
             examGridView = new DataGridView();
             examIdNum = new NumericUpDown();
             label4 = new Label();
-            label5 = new Label();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)tfNum).BeginInit();
@@ -60,7 +60,7 @@
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(518, 361);
+            tabControl1.Size = new Size(792, 491);
             tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -76,16 +76,24 @@
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(510, 333);
+            tabPage1.Size = new Size(784, 463);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Generate Exam";
             tabPage1.UseVisualStyleBackColor = true;
             tabPage1.Click += tabPage1_Click;
             // 
+            // label5
+            // 
+            label5.Location = new Point(114, 267);
+            label5.Name = "label5";
+            label5.Size = new Size(252, 29);
+            label5.TabIndex = 7;
+            label5.Text = "label5";
+            // 
             // generateBtn
             // 
             generateBtn.Anchor = AnchorStyles.None;
-            generateBtn.Location = new Point(114, 214);
+            generateBtn.Location = new Point(251, 279);
             generateBtn.Name = "generateBtn";
             generateBtn.Size = new Size(252, 26);
             generateBtn.TabIndex = 6;
@@ -97,7 +105,7 @@
             // 
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
-            label3.Location = new Point(114, 140);
+            label3.Location = new Point(251, 205);
             label3.Name = "label3";
             label3.Size = new Size(60, 15);
             label3.TabIndex = 5;
@@ -107,7 +115,7 @@
             // 
             crsCbox.Anchor = AnchorStyles.None;
             crsCbox.FormattingEnabled = true;
-            crsCbox.Location = new Point(245, 74);
+            crsCbox.Location = new Point(382, 139);
             crsCbox.Name = "crsCbox";
             crsCbox.Size = new Size(121, 23);
             crsCbox.TabIndex = 4;
@@ -115,7 +123,7 @@
             // tfNum
             // 
             tfNum.Anchor = AnchorStyles.None;
-            tfNum.Location = new Point(245, 132);
+            tfNum.Location = new Point(382, 197);
             tfNum.Name = "tfNum";
             tfNum.Size = new Size(121, 23);
             tfNum.TabIndex = 3;
@@ -123,7 +131,7 @@
             // mcqNum
             // 
             mcqNum.Anchor = AnchorStyles.None;
-            mcqNum.Location = new Point(245, 103);
+            mcqNum.Location = new Point(382, 168);
             mcqNum.Name = "mcqNum";
             mcqNum.Size = new Size(121, 23);
             mcqNum.TabIndex = 2;
@@ -132,7 +140,7 @@
             // 
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
-            label2.Location = new Point(114, 111);
+            label2.Location = new Point(251, 176);
             label2.Name = "label2";
             label2.Size = new Size(38, 15);
             label2.TabIndex = 1;
@@ -142,7 +150,7 @@
             // 
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
-            label1.Location = new Point(114, 77);
+            label1.Location = new Point(251, 142);
             label1.Name = "label1";
             label1.Size = new Size(79, 15);
             label1.TabIndex = 0;
@@ -198,19 +206,11 @@
             label4.TabIndex = 0;
             label4.Text = "Exam ID";
             // 
-            // label5
-            // 
-            label5.Location = new Point(114, 267);
-            label5.Name = "label5";
-            label5.Size = new Size(252, 29);
-            label5.TabIndex = 7;
-            label5.Text = "label5";
-            // 
             // InstructorMainPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(512, 359);
+            ClientSize = new Size(786, 489);
             Controls.Add(tabControl1);
             Name = "InstructorMainPage";
             Text = "InstructorMainPage";
