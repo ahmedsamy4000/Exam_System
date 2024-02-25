@@ -30,7 +30,7 @@
         {
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
-            label5 = new Label();
+            generationInfoLbl = new Label();
             generateBtn = new Button();
             label3 = new Label();
             crsCbox = new ComboBox();
@@ -65,7 +65,7 @@
             // 
             // tabPage1
             // 
-            tabPage1.Controls.Add(label5);
+            tabPage1.Controls.Add(generationInfoLbl);
             tabPage1.Controls.Add(generateBtn);
             tabPage1.Controls.Add(label3);
             tabPage1.Controls.Add(crsCbox);
@@ -80,15 +80,13 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Generate Exam";
             tabPage1.UseVisualStyleBackColor = true;
-            tabPage1.Click += tabPage1_Click;
             // 
-            // label5
+            // generationInfoLbl
             // 
-            label5.Location = new Point(114, 267);
-            label5.Name = "label5";
-            label5.Size = new Size(252, 29);
-            label5.TabIndex = 7;
-            label5.Text = "label5";
+            generationInfoLbl.Location = new Point(111, 348);
+            generationInfoLbl.Name = "generationInfoLbl";
+            generationInfoLbl.Size = new Size(527, 29);
+            generationInfoLbl.TabIndex = 7;
             // 
             // generateBtn
             // 
@@ -165,7 +163,7 @@
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(510, 333);
+            tabPage2.Size = new Size(784, 463);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "View Exam";
             tabPage2.UseVisualStyleBackColor = true;
@@ -242,6 +240,6 @@
         private Label label4;
         private ComboBox crsCbox;
         private Label label1;
-        private Label label5;
+        private Label generationInfoLbl;
     }
 }

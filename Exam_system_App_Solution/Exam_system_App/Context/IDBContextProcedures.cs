@@ -32,14 +32,15 @@ namespace Exam_system_App.Context
         Task<List<Exam_CorrectionResult>> Exam_CorrectionAsync(int? Exam_ID, int? St_ID, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<Exam_Correction1Result>> Exam_Correction1Async(int? Exam_ID, int? St_ID, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<Exam_DeleteResult>> Exam_DeleteAsync(int? Ex_id, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<Exam_GenerationResult>> Exam_GenerationAsync(string courseName, int? numTF, int? numMCQ, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<Exam_InsertResult>> Exam_InsertAsync(DateOnly? Ex_date, int? Ex_duration, int? course_ID, int? Ex_Grade, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<Exam_Questions_DeleteResult>> Exam_Questions_DeleteAsync(int? Ex_id, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<Exam_Questions_InsertResult>> Exam_Questions_InsertAsync(int? Ex_id, int? Q_ID, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<Exam_Questions_ReportResult>> Exam_Questions_ReportAsync(int? Ex_ID, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<Exam_Questions_UpdateResult>> Exam_Questions_UpdateAsync(int? Ex_id, int? Q_ID, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<Exam_SelectResult>> Exam_SelectAsync(int? cid, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<Exam_SelectByIDResult>> Exam_SelectByIDAsync(int? exID, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<Exam_UpdateResult>> Exam_UpdateAsync(int? Ex_id, DateOnly? Ex_date, int? Ex_duration, int? course_ID, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
-        Task<List<GenerateExamResult>> GenerateExamAsync(string name, int? mcq, int? tf, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<Instructor_Courses_ReportResult>> Instructor_Courses_ReportAsync(int? ins_id, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<Instructor_DeleteResult>> Instructor_DeleteAsync(int? id, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<Instructor_InsertResult>> Instructor_InsertAsync(string name, int? DeptId, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
@@ -50,6 +51,7 @@ namespace Exam_system_App.Context
         Task<List<Instructor_UpdateResult>> Instructor_UpdateAsync(int? id, string name, int? DeptId, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<Instructor_UpdateDeptIdResult>> Instructor_UpdateDeptIdAsync(int? id, int? DeptId, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<Instructor_UpdateNameResult>> Instructor_UpdateNameAsync(int? id, string name, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<InstructorChooseCourseResult>> InstructorChooseCourseAsync(int? insID, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<instructorLoginResult>> instructorLoginAsync(int? id, string password, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<int> Question_Choices_DeleteAsync(int? qid, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<int> Question_Choices_InsertAsync(int? qid, string choice, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);

@@ -5,7 +5,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Exam_system_App.Entities
 {
-    public partial class GenerateExamResult
+    public partial class Exam_GenerationResult
     {
+        public int? ExamID { get; set; }
     }
 }

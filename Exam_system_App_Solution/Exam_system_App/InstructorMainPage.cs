@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Exam_system_App.Context;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,9 +17,20 @@ namespace Exam_system_App
 {
     public partial class InstructorMainPage : Form
     {
+        DBContext context = new();
         public InstructorMainPage()
         {
             InitializeComponent();
+            Load += InstructorMainPage_Load;
+        }
+
+        private async void InstructorMainPage_Load(object? sender, EventArgs e)
+        {
+            var res = await context.Procedures.InstructorChooseCourseAsync(Constants.UserID);
+            crsCbox.DataSource = res;
+            crsCbox.DisplayMember = "Crs_name";
+            crsCbox.ValueMember = "Crs_ID";
+
         }
 
         private int mcq;
@@ -26,25 +40,39 @@ namespace Exam_system_App
         private int questionSum;
 
 
+        
 
-        private void tabPage1_Click(object sender, EventArgs e)
+        private async void generateBtn_Click(object sender, EventArgs e)
         {
-            //Context => Bind to course dropdown list from course table
-        }
 
-        private void generateBtn_Click(object sender, EventArgs e)
-        {
+            
+
+           
+            //context.Database.SetCommandTimeout(120);
             mcq = (int)this.mcqNum.Value;
             tf = (int)this.tfNum.Value;
-            course = this.crsCbox.SelectedItem?.ToString() ?? String.Empty;
+            course = this.crsCbox.SelectedValue?.ToString() ?? String.Empty;
             questionSum = mcq + tf;
 
+            var parameters = new[]
+            {
+                new SqlParameter("@name", course),
+                new SqlParameter("@mcq", mcq),
+                new SqlParameter("@tf", tf)
+            };
+
+            
             if (questionSum == 10 && course != String.Empty)
             {
-                //EF CODE GENERATE EXAM SP
-                MessageBox.Show("y");
 
-            }
+                //EF CODE GENERATE EXAM SP
+                await context.Procedures.Exam_GenerationAsync(course, mcq, tf);
+
+                var ex = context.Exams.Select(e => e.ExamId).OrderByDescending(exID => exID).FirstOrDefault();
+                generationInfoLbl.Text = $"exam {ex} generated successfully";
+                
+
+            }   
             else
             {
                 MessageBox.Show("Questions must be 10!");

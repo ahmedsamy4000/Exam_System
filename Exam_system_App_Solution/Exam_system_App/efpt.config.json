@@ -140,6 +140,10 @@
          "ObjectType": 1
       },
       {
+         "Name": "[dbo].[Exam_Generation]",
+         "ObjectType": 1
+      },
+      {
          "Name": "[dbo].[Exam_Insert]",
          "ObjectType": 1
       },
@@ -164,11 +168,11 @@
          "ObjectType": 1
       },
       {
-         "Name": "[dbo].[Exam_Update]",
+         "Name": "[dbo].[Exam_SelectByID]",
          "ObjectType": 1
       },
       {
-         "Name": "[dbo].[GenerateExam]",
+         "Name": "[dbo].[Exam_Update]",
          "ObjectType": 1
       },
       {
@@ -209,6 +213,10 @@
       },
       {
          "Name": "[dbo].[Instructor_UpdateName]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[InstructorChooseCourse]",
          "ObjectType": 1
       },
       {
